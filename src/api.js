@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://cloud-notepad-api.onrender.com', // Your Spring Boot URL
+    baseURL: 'https://cloud-notepad-api.onrender.com/api', // Your Spring Boot URL
 });
 
 // Intercept every request to inject the JWT
