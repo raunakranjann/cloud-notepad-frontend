@@ -1,16 +1,28 @@
-# React + Vite
+# ☁️ CloudPad: Secure React Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
-Currently, two official plugins are available:
+**Live Demo:** [Insert your Vercel URL here]
+**Backend API Repository:** [cloud-notepad-backend](https://github.com/raunakranjann/cloud-notepad-backend)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This is the frontend client for **CloudPad**, a production-grade secure note-taking application. It is a single-page application (SPA) built with React and Vite, designed to consume a secure Spring Boot REST API. 
 
-## React Compiler
+## ✨ Key Frontend Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **State Management & Routing:** Utilizes React Hooks (`useState`, `useEffect`) and React Router DOM for seamless, instantaneous page transitions without reloads.
+* **Client-Side Auth Guard:** Implements Route protection (`RequireAuth`) to intercept unauthorized users and redirect them to the login screen before rendering sensitive components.
+* **Stateless JWT Handling:** Securely captures and stores JSON Web Tokens (JWT) in local storage, automatically attaching them via Axios interceptors to all outbound HTTP requests.
+* **Dynamic Role Rendering:** Decodes JWT payloads on the client side to dynamically render UI elements (like the Admin Dashboard) based on the user's cryptographic role without requiring extra network calls.
+* **Edge Deployment:** Hosted on Vercel's global edge network for lightning-fast asset delivery.
 
-## Expanding the ESLint configuration
+## 🚀 Local Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To run this React application locally on your machine:
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/raunakranjann/cloud-notepad-frontend.git](https://github.com/raunakranjann/cloud-notepad-frontend.git)
+   cd cloud-notepad-frontend
